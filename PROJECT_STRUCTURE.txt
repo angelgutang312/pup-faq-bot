@@ -1,0 +1,21 @@
+pup-faq-ragbot/
+├── README.md                     # setup, architecture, how to run (per repo reqs)
+├── requirements.txt               # Python deps
+├── .gitignore
+├── docs/                          # checkpoint documentation (per repo reqs)
+│   ├── Project_Proposal.docx      # Checkpoint 1 deliverable #1
+│   └── Reflection_Checkpoint1.md  # Checkpoint 1 deliverable #5
+├── data/
+│   ├── raw/                       # Checkpoint 1 deliverable #2 (20-30 docs)
+│   │   └── *.md                   # one FAQ/policy topic per file
+│   └── processed/                 # cleaned/tokenized output (generated)
+│       ├── cleaned_corpus.jsonl
+│       └── preprocessing_report.md  # before/after examples
+├── src/
+│   ├── preprocessing/
+│   │   └── clean_text.py          # Checkpoint 1 deliverable #3
+│   └── embeddings/
+│       └── generate_embeddings.py # Checkpoint 1 deliverable #4
+│       └── embeddings_report.md   # model choice justification
+└── notebooks/                     # (reserved for later checkpoints:
+                                    #  ingestion, RAG app, vector DB, etc.)

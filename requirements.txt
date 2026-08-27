@@ -1,0 +1,17 @@
+# Checkpoint 1 — data pipeline & embeddings
+numpy>=1.26
+scikit-learn>=1.4        # offline TF-IDF fallback for embeddings demo
+nltk>=3.8                # tokenization (falls back to regex tokenizer if unavailable)
+sentence-transformers>=2.7   # production embedding model (all-MiniLM-L6-v2)
+
+# Checkpoint 2 — prompt architecture & vector indexing
+chromadb>=0.5              # vector database (falls back to offline SimpleVectorStore if unavailable)
+google-genai>=0.3          # Gemini API SDK (gemini-3.5-flash-lite)
+python-dotenv>=1.0         # loads GEMINI_API_KEY from .env
+
+# Planned for later checkpoints (uncomment as needed):
+# langchain>=0.2           # Checkpoint 3 — RAG orchestration
+# llama-index>=0.10        # Checkpoint 3 — RAG orchestration
+# streamlit>=1.35          # Checkpoint 4 — application interface
+# fastapi>=0.111           # Checkpoint 4 — alternative interface
+# python-docx>=1.1          # documentation generation
